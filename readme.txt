@@ -1,7 +1,7 @@
 FIUBA - Electrónica - Taller de Sistemas Embebidos
 Trabajo Práctico N°: 0 - Proyecto N°: 01
 
-Board:		Blue Pill (clon => uC CH32F103C8)
+Board:		Blue Pill (original => STM32F103C8 o clon => uC CH32F103C8)
 IDe:		STM32CubeIDE Version: 1.7.0
 
 File (Alt+Shift+N) => New => STM32 Project
@@ -75,32 +75,41 @@ Project Explorer:
 		RAM		0x20000000	2x20005000	20 KB	18,45 KB	1,55 KB	7,73%
 		FLASH	0x08000000	0x08010000	64 KB	59,42 KB	4,58 KB	7,15%
 
-	Edit C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.debug.openocd_2.0.0.202106290712\resources\openocd\st_scripts\target\stm32f1x.cfg
-		
-		=> Realizar las siguientes modificaciones:
+	original => STM32F103C8
+		tp0_1_hw-sw-test => Debug As => 1 STM32 C/C++ Application => Debugger =>
+							Debug probe => ST-LINK (ST-LINK GDB server) => Apply => OK
+							Confirm Perspective Switch => Switch
+							Step Over (F6) / Resume (F8) / Suspend
+							...
+		tp0_1_hw-sw-test => Terminate and Remove => Yes
+	
+	clon => uC CH32F103C8
+		Edit C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.debug.openocd_2.0.0.202106290712\resources\openocd\st_scripts\target\stm32f1x.cfg
+			
+			=> Realizar las siguientes modificaciones:
 
-		#jtag scan chain
-		if { [info exists CPUTAPID] } {
-		   set _CPUTAPID $CPUTAPID
-		} else {
-		   if { [using_jtag] } {
-			# See STM Document RM0008 Section 26.6.3
-			set _CPUTAPID 0x3ba00477
-		   } {
-			# this is the SW-DP tap id not the jtag tap id
-			# => cambiar chipid de 0x1ba01477 a 0x2ba01477
-			set _CPUTAPID 0x2ba01477
-		   }
-		}
-		# => agregar la siguiente linea
-		reset_config trst_only 
+			#jtag scan chain
+			if { [info exists CPUTAPID] } {
+			   set _CPUTAPID $CPUTAPID
+			} else {
+			   if { [using_jtag] } {
+				# See STM Document RM0008 Section 26.6.3
+				set _CPUTAPID 0x3ba00477
+			   } {
+				# this is the SW-DP tap id not the jtag tap id
+				# => cambiar chipid de 0x1ba01477 a 0x2ba01477
+				set _CPUTAPID 0x2ba01477
+			   }
+			}
+			# => agregar la siguiente linea
+			reset_config trst_only 
 
-	tp0_1_hw-sw-test => Debug As => 1 STM32 C/C++ Application => Debugger =>
-						Debug probe => ST-LINK (OpenOCD) => Apply => OK
-						Confirm Perspective Switch => Switch
-						Step Over (F6) / Resume (F8) / Suspend
-						...
-	tp0_1_hw-sw-test => Terminate and Remove => Yes
+		tp0_1_hw-sw-test => Debug As => 1 STM32 C/C++ Application => Debugger =>
+							Debug probe => ST-LINK (OpenOCD) => Apply => OK
+							Confirm Perspective Switch => Switch
+							Step Over (F6) / Resume (F8) / Suspend
+							...
+		tp0_1_hw-sw-test => Terminate and Remove => Yes
 
 GitHub => Repositories =>
 			New =>	Repository name: tdse-tp0_01-hw_sw_test
