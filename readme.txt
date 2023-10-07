@@ -4,6 +4,10 @@ Trabajo Práctico N°: 0 - Proyecto N°: 01
 Board:		Blue Pill (original => STM32F103C8 o clon => uC CH32F103C8)
 IDe:		STM32CubeIDE Version: 1.7.0
 
+Conectar Blue Pill a la PC
+Ejecutar STM32CubeIDE
+Help => ST-Link Upgrade => Refresh device list => Open in upgrade mode => Upgrade => Cerrar 
+
 File (Alt+Shift+N) => New => STM32 Project
 	MCU/MPU Selector Commercial Part Number: STM32F103C8 => Select => Next
 	Project Name:	tdse-tp0_01-hw_sw_test => Next => Finish
