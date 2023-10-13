@@ -1,7 +1,7 @@
 FIUBA - Electrónica - Taller de Sistemas Embebidos
 Trabajo Práctico N°: 0 - Proyecto N°: 01
 
-Board:		Blue Pill (original => STM32F103C8 o clon => uC CH32F103C8)
+Board:		Blue Pill (original => uC: STM32F103C8 o clon => uC: CH32F103C8)
 IDe:		STM32CubeIDE Version: 1.7.0
 
 Conectar Blue Pill a la PC
@@ -79,7 +79,7 @@ Project Explorer:
 		RAM		0x20000000	2x20005000	20 KB	18,45 KB	1,55 KB	7,73%
 		FLASH	0x08000000	0x08010000	64 KB	59,42 KB	4,58 KB	7,15%
 
-	original => STM32F103C8
+	Debug:	original => STM32F103C8
 		tp0_1_hw-sw-test => Debug As => 1 STM32 C/C++ Application => Debugger =>
 							Debug probe => ST-LINK (ST-LINK GDB server) => Apply => OK
 							Confirm Perspective Switch => Switch
@@ -87,7 +87,7 @@ Project Explorer:
 							...
 		tp0_1_hw-sw-test => Terminate and Remove => Yes
 	
-	clon => uC CH32F103C8
+	Debug:	clon => uC CH32F103C8
 		Edit C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.debug.openocd_2.0.0.202106290712\resources\openocd\st_scripts\target\stm32f1x.cfg
 			
 			=> Realizar las siguientes modificaciones:
