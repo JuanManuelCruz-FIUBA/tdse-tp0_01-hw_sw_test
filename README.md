@@ -15,7 +15,7 @@
     * **Project Explorer**:
       * **tp0_1_hw-sw-test** => **Core** => **Src** => **main.c** => 
         * Copy and paste the following code on **line # 102**:
-          ```
+          ```C
           HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
           HAL_Delay(500);
           ```
@@ -106,7 +106,7 @@
     * **Project Explorer**:
       * **tp0_1_hw-sw-test** => **Core** => **Src** => **main.c** => 
         * Copy and paste the following code on **line # 99**:
-          ```
+          ```C
           HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
           HAL_Delay(500);
           ```
@@ -197,7 +197,7 @@
     * **Project Explorer**:
       * **tp0_1_hw-sw-test** => **Core** => **Src** => **main.c** => 
         * Copy and paste the following code on **line # 99**:
-          ```
+          ```C
           HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
           HAL_Delay(500);
           ```
