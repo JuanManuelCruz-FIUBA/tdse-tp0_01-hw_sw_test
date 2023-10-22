@@ -21,7 +21,7 @@
           ```
         * **Save(Ctrl+S)** => **tp0_1_hw-sw-test** => **Build Project**
 	  * **Console**:
-          ```
+          ```Console
           arm-none-eabi-size   tp0_1_hw-sw-test.elf
           	text	data	bss	dec	hex	filename
           	5676	20	1636	7332	1ca4	tp0_1_hw-sw-test.elf
@@ -31,7 +31,7 @@
           	hh:mm:ss Build Finished. 0 errors, 0 warnings. (took Xs.YYYms)
           ```
       * **Bulid Analyzer**:
-          ```
+          ```Console
           Memory Regions:
 		Region	Start addr	End addr	Size	Free		Used	Usage (%)
 		RAM	0x20000000	2x20005000	20 KB	18,39 KB	1,61 KB	8,05%
@@ -112,7 +112,7 @@
           ```
         * **Save(Ctrl+S)** => **tp0_1_hw-sw-test** => **Build Project**
 	  * **Console**:
-          ```
+          ```Console
           arm-none-eabi-size   tp0_1_hw-sw-test.elf
           	text	data	bss	dec	hex	filename
           	4672	20	1572	6260	1874	tp0_1_hw-sw-test.elf
@@ -122,7 +122,7 @@
           	hh:mm:ss Build Finished. 0 errors, 0 warnings. (took Xs.YYYms)
           ```
       * **Bulid Analyzer**:
-          ```
+          ```Console
           Memory Regions:
 		Region	Start addr	End addr	Size	Free		Used	Usage (%)
 		RAM	0x20000000	2x20005000	20 KB	18,45 KB	1,55 KB	7,73%
@@ -203,7 +203,7 @@
           ```
         * **Save(Ctrl+S)** => **tp0_1_hw-sw-test** => **Build Project**
 	  * **Console**:
-          ```
+          ```Console
           arm-none-eabi-size   tp0_1_hw-sw-test.elf
           	text	data	bss	dec	hex	filename
           	4672	20	1572	6260	1874	tp0_1_hw-sw-test.elf
@@ -213,7 +213,7 @@
           	hh:mm:ss Build Finished. 0 errors, 0 warnings. (took Xs.YYYms)
           ```
       * **Bulid Analyzer**:
-          ```
+          ```Console
           Memory Regions:
 		Region	Start addr	End addr	Size	Free		Used	Usage (%)
 		RAM	0x20000000	2x20005000	20 KB	18,45 KB	1,55 KB	7,73%
@@ -225,7 +225,7 @@
           C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.debug.openocd_2.0.0.202106290712\resources\openocd\st_scripts\target\stm32f1x.cfg
           ```
           * => Realizar las siguientes modificaciones:
-          ```
+          ```Makefile
           #jtag scan chain
           if { [info exists CPUTAPID] } {
               set _CPUTAPID $CPUTAPID
