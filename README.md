@@ -1,8 +1,10 @@
 # FIUBA - Electrónica - Taller de Sistemas Embebidos
-# Trabajo Práctico N°: 0 - Proyecto N°: 01
+## Trabajo Práctico N°: 0 - Proyecto N°: 01
 
-## Board: NUCLEO-F103RB
-### IDE: STM32CubeIDE Version: 1.7.0
+### Board: NUCLEO-F103RB
+
+<details>
+<summary>IDE: STM32CubeIDE Version: 1.7.0</summary>
 
 * Connet **NUCLEO-F103RB** board to PC
   * Execute **STM32CubeIDE**
@@ -60,9 +62,12 @@
   git commit -m "first commit"
   git push -u origin main
   ```
+</details>
 
-## Board: Blue Pill Original (uC: STM32F103C8)
-### IDE: STM32CubeIDE Version: 1.7.0
+### Board: Blue Pill Original (uC: STM32F103C8)
+
+<details>
+<summary>IDE: STM32CubeIDE Version: 1.7.0</summary>
 
 * Connet **Blue Pill Original** board to PC
   * Execute **STM32CubeIDE**
@@ -148,9 +153,12 @@
   git commit -m "first commit"
   git push -u origin main
   ```
+</details>
 
-## Board: Blue Pill Clone (uC: CH32F103C8)
-### IDE: STM32CubeIDE Version: 1.7.0
+### Board: Blue Pill Clone (uC: CH32F103C8)
+
+<details>
+<summary>IDE: STM32CubeIDE Version: 1.7.0</summary>
 
 * Connet **Blue Pill Original** board to PC
   * Execute **STM32CubeIDE**
@@ -258,3 +266,4 @@
   git commit -m "first commit"
   git push -u origin main
   ```
+</details>
