@@ -64,6 +64,7 @@
   ```
 </details>
 
+---
 ### Board: Blue Pill Original (uC: STM32F103C8)
 
 <details>
@@ -155,6 +156,7 @@
   ```
 </details>
 
+---
 ### Board: Blue Pill Clone (uC: CH32F103C8)
 
 <details>
