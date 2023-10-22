@@ -212,7 +212,10 @@
 		FLASH	0x08000000	0x08010000	64 KB	59,42 KB	4,58 KB	7,15%
           ```
       * **Debug**:
-        * **Edit** C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.debug.openocd_2.0.0.202106290712\resources\openocd\st_scripts\target\stm32f1x.cfg
+        * **Edit**
+          ```
+          C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.debug.openocd_2.0.0.202106290712\resources\openocd\st_scripts\target\stm32f1x.cfg
+          ```
           * => Realizar las siguientes modificaciones:
           ```
           #jtag scan chain
