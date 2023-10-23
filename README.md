@@ -1,5 +1,5 @@
 # FIUBA - Electrónica - Taller de Sistemas Embebidos
-## Trabajo Práctico N°: 0 - Proyecto N°: 01
+## Trabajo Práctico N°: 0 - Proyecto N°: 01 - Primer Proyecto
 
 ### Board: NUCLEO-F103RB
 
