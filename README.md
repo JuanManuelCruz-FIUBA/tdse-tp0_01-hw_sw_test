@@ -269,3 +269,11 @@
   git push -u origin main
   ```
 </details>
+
+---
+### Works OK 
+| Board               | STM32CubeIDE-Win | STM32CubeIDE-DEB |
+| ------------------- | ---------------- | ---------------- |
+| NUCLEO-F103RB       |                  |                  |              
+| Blue Pill Original  | OK - JMC         |                  |
+| Blue Pill Clone     | OK - JMC         | OK - PIM         |
