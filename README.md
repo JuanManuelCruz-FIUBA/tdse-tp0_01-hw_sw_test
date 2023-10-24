@@ -4,7 +4,7 @@
 ### Board: NUCLEO-F103RB
 
 <details>
-<summary>IDE: STM32CubeIDE Version: 1.7.0</summary>
+<summary>IDE: STM32CubeIDE Version: 1.7.0 & 1.13.2</summary>
 
 * Connet **NUCLEO-F103RB** board to PC
   * Execute **STM32CubeIDE**
@@ -14,7 +14,11 @@
 	  * **Board Project Options**: Initialize all peripherals with their default Mode ? => **Yes**
     * **Project Explorer**:
       * **tp0_1_hw-sw-test** => **Core** => **Src** => **main.c** => 
-        * Copy and paste the following code on **line # 102**:
+        * Find the comment:
+          ```C
+          /* USER CODE BEGIN 3 */
+          ```
+        * Copy and paste the following code into the **next line** (following the comment):
           ```C
           HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
           HAL_Delay(500);
@@ -274,6 +278,6 @@
 ### Works OK 
 | Board               | STM32CubeIDE-Win | STM32CubeIDE-DEB |
 | ------------------- | ---------------- | ---------------- |
-| NUCLEO-F103RB       |                  |                  |              
+| NUCLEO-F103RB       | OK - GS          |                  |              
 | Blue Pill Original  | OK - JMC         |                  |
 | Blue Pill Clone     | OK - JMC         | OK - PIM         |
